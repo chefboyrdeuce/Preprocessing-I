@@ -130,8 +130,14 @@ table {
 * {
   box-sizing: border-box;
 }
+.display-flex {
+  display: flex;
+}
+.font-size {
+  font-size: large;
+}
 body {
-  font-family: 'Chivo', sans-serif;
+  font-family: 'Zilla Slab', serif, serif;
   font-weight: 300;
   min-width: 500px;
 }
@@ -141,7 +147,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Prata', serif;
+  font-family: 'Zilla Slab', serif, serif;
   font-size: 2rem;
 }
 .main-container {
@@ -149,7 +155,7 @@ h6 {
   min-width: 500px;
   width: 100%;
   padding: 0 50px 0 50px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Zilla Slab', serif, serif;
   font-weight: 300;
   display: flex;
   flex-direction: column;
@@ -172,6 +178,7 @@ header a {
   border-radius: 5px;
   flex-wrap: wrap;
   text-align: justify;
+  font-size: large;
 }
 .Intro img {
   min-width: 250px;
@@ -181,11 +188,12 @@ header a {
   border-radius: 5px;
 }
 .Intro h2 {
-  font-family: chivo;
+  font-family: 'Zilla Slab', serif, serif;
   padding-top: 5px;
 }
 .Intro p {
   margin-top: 20px;
+  font-size: large;
 }
 .experience-table {
   margin-top: 30px;

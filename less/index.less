@@ -54,14 +54,43 @@ table {
 	
 }
 
+// REQUIRED VARIABLE
+
+@zilla: 'Zilla Slab', serif;
+
+// .zilla {
+// font-family: @zilla;
+// font-size: 14px;
+
+
+// REQUIRED MIXINS
+
+.display-flex {
+    display: flex;
+}
+
+.font-size {
+    font-size: large;
+}
+
+// .display-flex();
+// .font-size();
+
+
+@zilla: 'Zilla Slab', serif;
+
+
+// font-family: @zilla;
+
+
 body{
-	font-family: 'Chivo', sans-serif;
-	 font-weight: 300;
-	 min-width: 500px;
+	font-family: @zilla, serif;
+	font-weight: 300;
+	min-width: 500px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Prata', serif;
+	font-family: @zilla, serif;
 	font-size: 2rem
    }
 
@@ -74,10 +103,10 @@ h1, h2, h3, h4, h5, h6 {
 	min-width: 500px;
 	width: 100%;
 	padding: 0 50px 0 50px;
-	font-family: 'Lato', sans-serif;
-	 font-weight: 300;
-	 display: flex;
-	 flex-direction: column;
+	font-family: @zilla, serif;
+	font-weight: 300;
+	.display-flex();
+	flex-direction: column;
 
 	@media (max-width: 500px) {
 		// background-color: red;
@@ -91,7 +120,7 @@ header{
 	// justify-content: space-between;
 	margin-top:50px;
 	margin-bottom: 20px;
-	display: flex;
+	.display-flex();
 	justify-content: flex-end;
 
 
@@ -107,6 +136,7 @@ header{
 	border-radius: 5px;
 	flex-wrap: wrap;
 	text-align: justify;
+	.font-size();
 
 	img{
 		min-width: 250px;
@@ -117,13 +147,14 @@ header{
 	}
 
 	h2{
-		font-family:chivo;
+		font-family: @zilla, serif;
 		padding-top: 5px;
 
 	}
 	
 	p{
 		margin-top: 20px;
+		.font-size();
 	}
 }
 
@@ -189,7 +220,7 @@ input[type=text], select, textarea {
 	border-radius: 5px;
 	background-color: #f2f2f2;
 	padding: 20px;
-	display: flex;
+	.display-flex();
 	justify-content: center;
   }
 
@@ -198,7 +229,7 @@ footer{
 	padding: 20px;
 	background-color: grey;
 	color:white;
-	display: flex;
+	.display-flex();
 	justify-content: flex-end;
 	border-radius: 5px 5px 0px 0px;
 }
