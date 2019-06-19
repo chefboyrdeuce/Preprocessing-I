@@ -6,7 +6,7 @@
 
   <title>My Resume</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,700|Prata" rel="stylesheet">
  
 
   <link rel="stylesheet" href="css/index.css">
@@ -22,10 +22,10 @@
 
     <header>
       <nav>
-        <a href="#">ABOUT </a>
-        <a href="#">SKILLS</a>
-        <a href="#">EXPERIENCE</a>
-        <a href="#">CONTACT</a>
+        <a href="#about">ABOUT </a>
+        <a href="#skills">SKILLS</a>
+        <a href="#experience">EXPERIENCE</a>
+        <a href="#contact">CONTACT</a>
       </nav>
     </header>
 
@@ -34,7 +34,7 @@
 
       <h1>Jules Pierre-Louis</h1>
       <h2>Digital Media Consultant <br>Full Stack Developer</h2>
-      <p class="Intro">
+      <p class="Intro" id="about">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.   
       </p>
     </section>
@@ -42,7 +42,7 @@
     <section class="About">
       <p class="about-left"></div>
 
-      <ul class="skills"> 
+      <ul class="skills" id="skills"> 
         <li></li>
           <li></li>
           <li></li>
@@ -51,15 +51,36 @@
       </ul>
     </section>
 
-    <ul class="work-history"> 
-      <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
+    <section class="experience-table" id="experience">
+        <table>
+          <tr class="table-heading">
+            <th>Years</th>
+            <th>Company</th>
+            <th>Title</th>
+            <th>Tech Used</th>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Larry's Auto Service</td>
+            <td>Automotive Tech</td>
+            <td>Modis Scope</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Accelerated Automotive</td>
+            <td>Owner/Tech</td>
+            <td>HP Tuners</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Rev Extreme</td>
+            <td>Performance Tuner</td>
+            <td>HP Tuners/Cobb Software</td>
+          </tr>
+        </table>
+      </section>
 
-    <form class="contact">
+    <form class="contact" id="contact">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.   
     </form>
     

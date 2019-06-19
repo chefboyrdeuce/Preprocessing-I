@@ -183,9 +183,29 @@ header a {
 .Intro p {
   margin-top: 20px;
 }
+.experience-table {
+  margin-top: 30px;
+}
+.experience-table table {
+  width: 100%;
+}
+.experience-table table th {
+  padding: 10px 0;
+  font-size: 3rem;
+}
+.experience-table table td {
+  text-align: center;
+  font-size: 2rem;
+  padding: 5px 0;
+}
+form {
+  margin-top: 30px;
+}
 footer {
   margin-top: 30px;
   padding: 20px;
   background-color: grey;
   color: white;
+  display: flex;
+  justify-content: flex-end;
 }
