@@ -56,7 +56,8 @@ table {
 
 body{
 	font-family: 'Chivo', sans-serif;
- 	font-weight: 300;
+	 font-weight: 300;
+	 min-width: 500px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -70,24 +71,29 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 0 50px 0 50px;
 	// background: blue;
 	// max-width: 1200px;
-	min-width: 80%;
+	min-width: 500px;
 	width: 100%;
 	padding: 0 50px 0 50px;
 	font-family: 'Lato', sans-serif;
- 	font-weight: 300;
+	 font-weight: 300;
+	 display: flex;
+	 flex-direction: column;
 
 	@media (max-width: 500px) {
-		background-color: lightblue;
+		// background-color: red;
 		
 	  }
 }
 
 header{
-	display:flex;
-	justify-content: flex-end;
+	// display:flex;
+	// justify-content: flex-end;
 	// justify-content: space-between;
 	margin-top:50px;
 	margin-bottom: 20px;
+	display: flex;
+	justify-content: flex-end;
+
 
 	a{
 		text-decoration: none;
@@ -98,12 +104,16 @@ header{
 .Intro{
 	background-color: #9e9e9e2b;
 	padding: 30px;
+	border-radius: 5px;
+	flex-wrap: wrap;
+	text-align: justify;
 
 	img{
 		min-width: 250px;
 		width: 30%;
 		height: auto;
 		margin-bottom: 20px;
+		border-radius: 5px;
 	}
 
 	h2{
@@ -120,14 +130,20 @@ header{
 .experience-table {
 	margin-top: 30px;
 	// margin:20px 0;
+
+	@media (max-width: 500px) {
+		display: none;
+		
+		
+	  }
 	
 	table{
 		width:100%;
 		
 		
-		tr:nth-child(even) {
-			// background-color: @cadetBlue;
-		}
+		// tr:nth-child(even) {
+		// 	// background-color: @cadetBlue;
+		// }
 
 		th{
 			padding: 10px 0;
@@ -142,9 +158,40 @@ header{
 	}
 }
 
-form{
-	margin-top:30px;
-}
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+  }
+  
+  input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+	background-color: #45a049;
+  }
+  
+  .contact-form {
+	margin-top: 30px;
+	min-width: 500px;
+	width:50%;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+  }
 
 footer{
 	margin-top: 30px;
@@ -153,6 +200,7 @@ footer{
 	color:white;
 	display: flex;
 	justify-content: flex-end;
+	border-radius: 5px 5px 0px 0px;
 }
 
 
