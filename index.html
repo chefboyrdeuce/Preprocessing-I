@@ -6,6 +6,9 @@
 
   <title>My Resume</title>
 
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,700|Prata" rel="stylesheet">
+ 
+
   <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
@@ -14,6 +17,103 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+
+  <section class="main-container">
+
+    <header>
+      <nav>
+        <a href="#about">ABOUT </a>
+        <a href="#skills">SKILLS</a>
+        <a href="#experience">EXPERIENCE</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+    </header>
+
+    <section class="Intro">
+      <img class="Headshot" src="4545.png">
+
+      <h1>Jules Pierre-Louis</h1>
+      <h2>Digital Media Consultant <br>Full Stack Developer</h2>
+      <p class="Intro" id="about">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.   
+      </p>
+    </section>
+
+    <section class="About">
+      <p class="about-left"></div>
+
+      <ul class="skills" id="skills"> 
+        <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+    </section>
+
+    <section class="experience-table" id="experience">
+        <table>
+          <tr class="table-heading">
+            <th>Years</th>
+            <th>Company</th>
+            <th>Title</th>
+            <th>Tech Used</th>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Larry's Auto Service</td>
+            <td>Automotive Tech</td>
+            <td>Modis Scope</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Accelerated Automotive</td>
+            <td>Owner/Tech</td>
+            <td>HP Tuners</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Rev Extreme</td>
+            <td>Performance Tuner</td>
+            <td>HP Tuners/Cobb Software</td>
+          </tr>
+        </table>
+      </section>
+
+    <!-- <form class="contact-form" id="contact">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.   
+    </form> -->
+
+    <div class="contact-form" id="contact">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="lname">Company</label>
+        <input type="text" id="company" name="comapnyname" placeholder="Your company..">
+    
+        <label for="project">Project Type</label>
+        <select id="interest" name="interest">
+          <option value="digital-marketing">Digital Marketing</option>
+          <option value="ecommerce">E-Commerce</E-Commerce></option>
+          <option value="web-dev">Web Development</option>
+          <option value="other">Other</option>
+        </select>
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Please write a brief description of how I can help you.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    
+    <footer>Last Updated 6-18-2019</footer>
+
+  </section>
+
 </body>
+
 </html>
